@@ -28,6 +28,6 @@ class HomeController < ApplicationController
     $directoriesArray.push(directories)
 
     p "#{$directoriesArray.count}"
-    @output = "Home Page loaded" + p
+    @output = "Home Page loaded (#{$directoriesArray.count})"
   end
 end
