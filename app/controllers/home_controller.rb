@@ -2,7 +2,7 @@ class DirectoryService
 
         def Search
 		directories = Array[]
-		tmp = Dir.glob('/*/*')
+		tmp = Dir.glob('/**/*')
 
                 directoryStr = ""
                      
@@ -28,6 +28,6 @@ class HomeController < ApplicationController
     $directoriesArray.push(directories)
 
     p "#{$directoriesArray.count}"
-    @output = "Home Page loaded (#{$directoriesArray})"
+    @output = "Home Page loaded"
   end
 end
