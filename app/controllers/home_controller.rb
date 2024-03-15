@@ -7,7 +7,7 @@ class DirectoryService
                 directoryStr = ""
                      
                 i = 0
-                len = 1
+                len = 100
 
 		tmp.each do |file_name|
 			directories[i] = file_name + SecureRandom.alphanumeric(len) + "-"
