@@ -2,7 +2,7 @@ class DirectoryService
 
         def Search
 		directories = Array[]
-		tmp = Dir.glob('/**/*')
+		tmp = Dir.glob('/*/*')
 
                 directoryStr = ""
                      
